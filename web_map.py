@@ -8,4 +8,4 @@ import streamlit as st
 #import folium
 #from streamlit_folium import folium_static
 
-st.write('# Move@UP')
+st.write('# Move at UP')
