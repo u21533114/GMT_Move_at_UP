@@ -35,7 +35,7 @@
             };
         }
             // loading GeoJSON file - Here my html and CoT_Wards.geojson file resides in same folder
-                getJSON("https://github.com/u21533114/GMT_Move_at_UP/blob/main/CoT_Wards.geojson",function(data){
+                $.getJSON("https://github.com/u21533114/GMT_Move_at_UP/blob/main/CoT_Wards.geojson",function(data){
             // add GeoJSON layer to the map once the file is loaded
             var datalayer = L.geoJson(data ,{
                 style: style,
