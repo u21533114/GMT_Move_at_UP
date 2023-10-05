@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Move @ UP</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+        <!-- Adding the CND for JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+<body>
+    <h1>Move@UP</h1>
+    <div id="map" style="width: 900px; height: 600px;"></div>
+    <script>
+       
+       var map = L.map('map').setView([-25.754544, 28.231482], 16);
+        osm_URL = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+        mapboxURL = 'https://api.mapbox.com/styles/mapbox/light-v11/msimsi-m-19/cla0qzg2d003f14nunum2y21l/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibXNpbXNpLW0tMTkiLCJhIjoiY2sxZnpzNG81MDBjMDNoazF2YnlucHFraCJ9.pW9x_HEirWrXIMJwg5mz3Q'
+        mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+        L.tileLayer( osm_URL, { attribution: '&copy; ' + mapLink + ' Contributors', }).addTo(map); 
+
+        //add basemap with general campus infrastructure   
+        var basemap =  L.tileLayer.wms('http://localhost:8080/geoserver/gmt320_moveatup/wms?' , { layers: 'Parking,Gates,Paths,Buildings,Roads', format: 'image/png',transparent: true}).addTo(map)
+        
+        //define variables
+        var retail = L.tileLayer.wms('http://localhost:8080/geoserver/gmt320_moveatup/wms?' , { layers: 'Retail', format: 'image/png',transparent: true}),
+            toilets = L.tileLayer.wms('http://localhost:8080/geoserver/gmt320_moveatup/wms?' , { layers: 'Toilets', format: 'image/png',transparent: true}),
+            wc_toilets = L.tileLayer.wms('http://localhost:8080/geoserver/gmt320_moveatup/wms?' , { layers: 'WC Toilets', format: 'image/png',transparent: true});
+  
+        var layerControl = L.control.layers().addTo(map);
+        
+        //layerControl.addBaseLayer(basemap, "OpenTopoMap");
+        layerControl.addOverlay(retail, 'Retail').addTo(map);
+        layerControl.addOverlay(toilets, 'Toilets').addTo(map);
+        layerControl.addOverlay(wc_toilets, 'WC Toilets').addTo(map);
+
+    </script>
+
+</body>
+</html>
