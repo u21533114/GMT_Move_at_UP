@@ -1,0 +1,144 @@
+Campus Map Metadata
+
+Hatfield Campus
+Storage: SQLite
+Geometry: Polygon (Polygon)
+CRS: EPSG:4326 - WGS 84 - Geographic
+Extent
+28.2255101307844001,-25.7571659025558013 : 28.2359306628983013,-25.7511623578889015
+Unit: degrees
+Feature count : 114
+
+
+Field		Type
+ogc_fid 	Integer64
+ogc_fid1 	Integer64
+pkuid 		String 
+name 		String
+ogc_fid0 	Integer64
+layer 		String
+path 		String
+
+
+
+Parking 
+
+Storage	SQLite
+Comment
+
+Encoding 	windows-1252
+Geometry 	Polygon (Polygon)
+CRS 		EPSG:4326 - WGS 84 - Geographic
+
+Extent
+28.2257473242495998,-25.7572503907366013 : 28.2365743727891996,-25.7509325251647994
+Unit 	degrees
+Feature count 	29
+
+
+Field	Type
+ogc_fid	Integer64
+pkuid	Integer
+name	String
+
+Pathways
+
+Storage	SQLite
+Comment
+
+Encoding	windows-1252
+Geometry	Line (MultiLineString)
+CRS		EPSG:4326 - WGS 84 - Geographic
+
+Extent
+28.2264181227733886,-25.7572336527933423 : 28.2357154060185422,-25.7509429858640466
+Unit	degrees
+Feature count	87
+
+
+Field	Type
+ogc_fid	Integer64
+name	String
+
+Retail
+
+Storage	SQLite
+Comment
+
+Encoding	windows-1252
+Geometry	Point (Point)
+CRS	EPSG:4326 - WGS 84 - Geographic
+
+Extent
+28.2284147350313255,-25.7557084088059085 : 28.2343564389018198,-25.7532245038760763
+Unit	degrees
+Feature count	15
+
+
+
+Field	Type
+ogc_fid	Integer64
+pkuid	Integer
+name	String
+type	String
+
+Roads
+
+
+Storage	SQLite
+Comment
+
+Encoding	windows-1252
+Geometry	Line (MultiLineString)
+CRS		EPSG:4326 - WGS 84 - Geographic
+
+Extent
+28.2254737541271936,-25.7573194990484922 : 28.2363331657698886,-25.7511205261617988
+Unit	degrees
+Feature count	20
+
+
+Field	Type
+ogc_fid	Integer64
+name	String
+
+Toilets
+
+Storage	SQLite
+Comment
+
+Encoding	windows-1252
+Geometry	Point (Point)
+CRS		EPSG:4326 - WGS 84 - Geographic
+Extent		28.2261326939016755,-25.7568736537181167 : 28.2352421017276889,-25.7513343792855913
+Unit		degrees
+Feature count	30
+
+
+Wheelchair Accessible Toilets
+
+Field	Type
+ogc_fid	Integer64
+pkuid	Integer
+
+
+Storage	SQLite
+Comment
+
+Encoding	windows-1252
+Geometry	Point (Point)
+CRS
+EPSG:4326 - WGS 84 - Geographic
+Extent
+28.2285592896412609,-25.7566395016230842 : 28.2353126743913379,-25.7513202026133534
+Unit	degrees
+Feature count	17
+
+AUTHORS:
+Keren Benjiman
+Brett Harzon
+Suzanna Spooner
+Prudence Mcena
+
+
+
