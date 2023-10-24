@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Move@UP: Web map</title>
+        <meta charset="utf-8" />
+
+        <!--CDN for leaflet-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+        <!--CDN for search function-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-search@2.2.11/dist/leaflet-control-search.min.css" />
+        <script src="https://unpkg.com/leaflet-control-search@2.2.11/dist/leaflet-control-search.min.js"></script>
+
+        <!-- CSS file -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- Plotly -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+        <!-- Adding the CND for JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+<body>
+    <h1>Move@UP</h1> 
+    <h2>Campus navigation map</h2>
+
+    <div class="topnav">
+      <a class="active" href="./index_v2.html">Web map</a>
+      <a href="./data.html">Data</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./congestion.html">Congestion</a>
+    </div> 
+       
+    <div id="map"></div>
+
+    <div id = "logo">
+      <img src="https://i.ibb.co/MfMYHwh/logo-1.png" alt="logo" class = "image">
+    </div>
+
+  <!--Legend-->
+  <div id="mapLegend"></div>
+
+  <script src="dashboard.js"></script>
+
+    <script src="script.js" charset ="utf-8"></script>
+
+</body>
+</html>
