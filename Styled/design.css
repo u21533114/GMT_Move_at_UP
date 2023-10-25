@@ -91,6 +91,32 @@ h3{
   font-size:15px;
 }
 
+h5{
+  font-family:arial;
+  font-size:15px;
+  text-decoration: underline;
+  font-weight: lighter;
+}
+
+p{
+  font-family:'Times New Roman', Times, serif;
+  font-size:15px;
+}
+
+#blog{
+  float: left;
+  text-align: justify;
+}
+
+.legend_image
+{
+  position:absolute;
+  bottom: 30px;
+  left: 10px;
+  width:193px;
+  height:238px;
+  z-index: 1;
+}
 
 a{
 color: black;
