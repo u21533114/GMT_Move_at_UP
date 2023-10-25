@@ -1,4 +1,4 @@
-var map = L.map('map').setView([-25.754544, 28.231482], 16);
+var map = L.map('map').setView([-25.7541, 28.231482], 17);
 
 var CartoDB_VoyagerNoLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
