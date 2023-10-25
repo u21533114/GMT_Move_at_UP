@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8" />
+
+        <!--CDN for leaflet-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+        <!--CDN for search function-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-search@2.2.11/dist/leaflet-control-search.min.css" />
+        <script src="https://unpkg.com/leaflet-control-search@2.2.11/dist/leaflet-control-search.min.js"></script>
+
+        <!-- CSS file -->
+        <link rel="stylesheet" type="text/css" href="design.css">
+
+        <!-- Plotly -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+        <!-- Adding the CND for JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Move@UP</h1>
+        <p>An innovative University of Pretoria navigation tool</p>
+      </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a class="active" href="./home.html">Home</a>
+        <a href="./data.html">Data</a>
+        <a href="./webmap.html">Webmap</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./heatmaps.html">Heatmaps</a>
+      </div>
+
+    <!-- Dividing Content -->
+    <div class="row">
+        <div class="side">
+            <h2>About Us</h2>
+            <p >Move@UP is an application created by GIS in Motion. We are a dedicated team of 4 students, aiming to improve the navigation of students on the University of Pretoria Hatfield Campus</p>
+            <img src="https://i.ibb.co/QXCsB9t/logo-2-removebg-preview.png" alt="logo">
+        </div>
+        <div class="main">
+          <h2>Our Services</h2>
+          <p>The Move@UP application has a number of features, including the following:</p>
+
+          <!-- Slideshow -->
+          <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+              <script src = "slides.js"></script>
+
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src= "https://i.ibb.co/r6xn0qZ/image.png" alt="webmap" style="width:100%">
+                <div class="text">An interactive Campus Map</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="https://i.ibb.co/xS6vR74/image.png" alt="search" style="width:100%">
+                <div class="text">A search function</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="https://i.ibb.co/SQj761T/Most-Congested-Areas-1.png" alt="Heatmap" style="width:100%">
+                <div class="text">Heatnaps showing congestion and other areas</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src= "https://i.ibb.co/xLhMStn/image.png" alt="Graph" style="width:100%">
+                <div class="text">Navigational insights</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="https://i.ibb.co/dtQ2bqN/image.png" alt="Routing" style="width:100%">
+                <div class="text">Routing between areas (In future updates)</div>
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+      </div>
+    
+    Slideshow
+
+</body>
+</html>
