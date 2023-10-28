@@ -110,9 +110,9 @@ h5{
 
 .legend_image
 {
-  position:absolute;
-  bottom: 30px;
-  left: 10px;
+  position:relative; /*absolute*/
+  bottom: 600px; /*bottom 30*/
+  left: 5px; /* left 10*/
   width:193px;
   height:238px;
   z-index: 1;
