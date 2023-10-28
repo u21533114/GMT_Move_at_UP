@@ -118,6 +118,16 @@ h5{
   z-index: 1;
 }
 
+.north_arrow /*507x715*/
+{
+  position:relative;
+  bottom: 330px;
+  left: 1440px;
+  width:47px;
+  height:64px;
+  z-index: 1;
+}
+
 a{
 color: black;
 }
