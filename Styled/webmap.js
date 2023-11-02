@@ -65,7 +65,7 @@ var defaultBuildings = {
   service: "WFS",
   version: "1.0.0",
   request: "GetFeature",
-  typeName: "gmt320_moveatup:Parking",
+  typeName: "gmt320_moveatup:Buildings",
   outputFormat: "application/json",
   format_options: "callback:getJson",
   SrsName: "EPSG:4326",
@@ -125,9 +125,9 @@ $.ajax({
                 return {  
                     weight: 2, 
                     color: '#869cff', 
-                    opacity: 1, 
+                    opacity: 0, 
                     fillColor: "#869cff", 
-                    fillOpacity: 0.5, 
+                    fillOpacity: 0, 
                 };  
             }, 
             // enable pops
