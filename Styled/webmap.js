@@ -12,13 +12,13 @@ attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, 
           
 
 //add basemap with general campus infrastructure   
-var campus_map =  L.tileLayer.wms('http://localhost:8080/geoserver/gmt320_moveatup/wms?' , { layers: 'Parking,Gates,Paths,Roads', format: 'image/png',transparent: true}).addTo(map)
+var campus_map =  L.tileLayer.wms('http://localhost:8080/geoserver/gmt320_moveatup/wms?' , { layers: 'Buildings,Parking,Gates,Paths,Roads', format: 'image/png',transparent: true}).addTo(map)
         
 var baseMaps = {
     "CARTO": CartoDB_VoyagerNoLabels,
     "Satellite": Esri_WorldImagery
 };
-    
+  
 //define variables
 var retail = L.tileLayer.wms('http://localhost:8080/geoserver/gmt320_moveatup/wms?' , { layers: 'Retail', format: 'image/png',transparent: true}),
 toilets = L.tileLayer.wms('http://localhost:8080/geoserver/gmt320_moveatup/wms?' , { layers: 'Toilets', format: 'image/png',transparent: true}),
@@ -30,9 +30,8 @@ var overlayMaps = {
     "Toilets": toilets,
     "Wheelchair-accessible toilets": wc_toilets,
 };
-  
-var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
 
+var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
 
 //scale bar
 L.control.scale({
@@ -40,18 +39,6 @@ L.control.scale({
     maxWidth: 200, 
     imperial: false, 
 }).addTo(map);
-
-//search bar: not working
-/*var searchControl = new L.Control.Search({
-    position: "topright",
-    layer: campus_map, 
-    initial: false,
-    zoom: 20,
-    marker: false,
-});
-
-map.addControl(searchControl);*/
-
 
 //WFS
 //Group layer for search function
@@ -140,3 +127,15 @@ $.ajax({
         console.log('Request Status: ' + xhr.status + ' Status Text: ' + xhr.statusText + ' ' + xhr.responseText);
     }
 });
+
+//search bar: not working
+/*var searchControl = new L.Control.Search({
+    position: "topright",
+    layer: buildingsLayerGroup, 
+    initial: false,
+    zoom: 20,
+    marker: false,
+});
+
+map.addControl(searchControl);
+*/
