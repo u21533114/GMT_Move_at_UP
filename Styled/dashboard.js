@@ -6,7 +6,7 @@ var lateData = [
         values: [36, 18, 5],
         type: 'pie',
         marker: {
-            colors: ['#869cff', '#d9e0ff', '#2b51fc'], // Define custom colors here
+            colors: ['#869cff', '#d9e0ff', '#2b51fc'], 
           },
     }
 ]
@@ -28,7 +28,7 @@ var mapUsageData = [
         values: [17, 29, 3],
         type: 'pie',
         marker: {
-            colors: ['#869cff', '#d9e0ff', '#2b51fc'], // Define custom colors here
+            colors: ['#869cff', '#d9e0ff', '#2b51fc'], 
           },
     }
 ]
@@ -50,7 +50,7 @@ var navigateData = [
         values: [27, 32],
         type: 'pie',
         marker: {
-            colors: ['#d9e0ff', '#2b51fc'], // Define custom colors here
+            colors: ['#d9e0ff', '#2b51fc'], 
           },
     }
 ]
@@ -85,7 +85,7 @@ var peak = {
     name: 'Peak times',
     type: 'bar',
     marker: {
-        color: '#2b51fc', // Set the color for 'Peak times' bars
+        color: '#2b51fc', 
     },
   };
   
@@ -95,7 +95,7 @@ var peak = {
     name: 'Off-peak times',
     type: 'bar',
     marker: {
-        color: '#d9e0ff', // Set the color for 'Peak times' bars
+        color: '#d9e0ff', 
     },
   };
   
